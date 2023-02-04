@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TransPosition Worship</title>
+<link rel="stylesheet" type="text/css" href="/styles.css" />
+</head>
+<body>
+   
+  <div>
+    <h2>코드선택</h2>
+    <div class="switch-field">
+      <input type="radio" id="root_A" name="root" value="A" onclick='transfer(event)' />
+      <label for="root_A">A</label>
+      <input type="radio" id="root_Bb" name="root" value="Bb" onclick='transfer(event)' />
+      <label for="root_Bb">Bb</label>
+      <input type="radio" id="root_B" name="root" value="B" onclick='transfer(event)' />
+      <label for="root_B">B</label>
+      <input type="radio" id="root_C" name="root" value="C" onclick='transfer(event)' />
+      <label for="root_C">C</label>
+      <input type="radio" id="root_C#" name="root" value="C#" onclick='transfer(event)' />
+      <label for="root_C#">C#</label>
+      <input type="radio" id="root_D" name="root" value="D" onclick='transfer(event)' /> 
+      <label for="root_D">D</label>
+      <input type="radio" id="root_Eb" name="root" value="Eb" onclick='transfer(event)' />
+      <label for="root_Eb">Eb</label>
+      <input type="radio" id="root_E" name="root" value="E" onclick='transfer(event)' />
+      <label for="root_E">E</label>
+      <input type="radio" id="root_F" name="root" value="F" onclick='transfer(event)' />
+      <label for="root_F">F</label>
+      <input type="radio" id="root_F#" name="root" value="F#" onclick='transfer(event)' />
+      <label for="root_F#">F#</label>		
+      <input type="radio" id="root_G" name="root" value="G" onclick='transfer(event)' checked/>
+      <label for="root_G">G</label>
+      <input type="radio" id="root_G#" name="root" value="G#" onclick='transfer(event)' />
+      <label for="root_G#">G#</label>
+    </div>
+  </div>
+<div>
+      <div class="container" onclick="action_coords(event)">
+        <!---이미지는 500px 기본-->
+          <img src="/score/mysoul_2.jpg" alt="My Image" width="500px">
+            <!--Chord 입력 라인-->
+            <div class="overlay" style="top:78px">
+             <p style="left:110px">3</p>
+             <p style="left:220px">4</p>
+             <p style="left:330px">3</p>
+             <p style="left:450px">4</p>
+            </div> 
+
+            <div class="overlay" style="top:260px">
+              <p style="left:110px">3</p>
+              <p style="left:220px">4</p>
+              <p style="left:330px">5</p>
+              <p style="left:450px">1</p>
+            </div> 
+
+
+            <div class="overlay" style="top:435px">
+              <p style="left:65px">1</p>
+              <p style="left:100px">3</p>
+              <p style="left:150px">4</p>
+              <p style="left:210px">1</p>
+              <p style="left:245px">7</p>
+              <p style="left:285px">6</p>
+              <p style="left:350px">5b</p>
+              <p style="left:420px">5</p>
+            </div>
+
+            <div class="overlay" style="top:565px">
+              <p style="left: 105px;">1</p>
+              <p style="left:150px">3</p>
+              <p style="left:210px">4</p>
+              <p style="left:320px">5</p> 
+              <p style="left:430px">1</p>
+            </div>
+             <!--Chord 입력 라인-->
+      </div>
+      
+
+</div>
+
+<div id="debug_out" style="margin:100px;width:50%;height:50px;cursor:pointer;"></div>
+
+    <script src="/trans.js"></script>
+
+</body>
+</html>

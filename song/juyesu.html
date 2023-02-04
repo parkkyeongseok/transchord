@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TransPosition Worship</title>
+<link rel="stylesheet" type="text/css" href="/styles.css" />
+</head>
+<body>
+   
+  <div>
+    <h2>코드선택</h2>
+    <div class="switch-field">
+      <input type="radio" id="root_A" name="root" value="A" onclick='transfer(event)'/>
+      <label for="root_A">A</label>
+      <input type="radio" id="root_Bb" name="root" value="Bb" onclick='transfer(event)' />
+      <label for="root_Bb">Bb</label>
+      <input type="radio" id="root_B" name="root" value="B" onclick='transfer(event)' />
+      <label for="root_B">B</label>
+      <input type="radio" id="root_C" name="root" value="C" onclick='transfer(event)' />
+      <label for="root_C">C</label>
+      <input type="radio" id="root_C#" name="root" value="C#" onclick='transfer(event)' />
+      <label for="root_C#">C#</label>
+      <input type="radio" id="root_D" name="root" value="D" onclick='transfer(event)' /> 
+      <label for="root_D">D</label>
+      <input type="radio" id="root_Eb" name="root" value="Eb" onclick='transfer(event)' />
+      <label for="root_Eb">Eb</label>
+      <input type="radio" id="root_E" name="root" value="E" onclick='transfer(event)' />
+      <label for="root_E">E</label>
+      <input type="radio" id="root_F" name="root" value="F" onclick='transfer(event)' />
+      <label for="root_F">F</label>
+      <input type="radio" id="root_F#" name="root" value="F#" onclick='transfer(event)' />
+      <label for="root_F#">F#</label>		
+      <input type="radio" id="root_G" name="root" value="G" onclick='transfer(event)' checked />
+      <label for="root_G">G</label>
+      <input type="radio" id="root_G#" name="root" value="G#" onclick='transfer(event)' />
+      <label for="root_G#">G#</label>
+    </div>
+  </div>
+  
+<div>
+      <div class="container" onclick="action_coords(event)">
+        <!---이미지는 500px 기본-->
+          <img src="/score/juyesu.jpg" alt="My Image" width="500px">
+            <!--Chord 입력 라인-->
+
+            <div class="overlay" style="top:20px">
+              <span style="left:80px">Intro : Verse 코드와 동일하되 마지막 2마디는 2345 상행 section</span>
+             </div> 
+
+            <div class="overlay" style="top:87px">
+             <p style="left:145px">1</p>
+             <p style="left:185px">2</p>
+             <p style="left:240px">3</p>
+             <p style="left:330px">4</p>
+             <p style="left:420px">3</p>
+             <p style="left:455px">5</p>
+             <p style="left:470px;">6b</p>
+            </div> 
+
+            <div class="overlay" style="top:250px">
+              <p style="left:130px">6</p>
+              <p style="left:175px">5</p>
+              <p style="left:225px">4</p>
+              <p style="left:260px">3</p>
+              <p style="left:310px">2</p>
+              <p style="left:350px">5b</p>
+              <p style="left:410px">5</p>
+            </div> 
+
+            <div class="overlay" style="top:415px">
+              <p style="left:110px">1</p>
+              <p style="left:160px">7b</p>
+              <p style="left:210px">6</p>
+              <p style="left:255px">5</p>
+              <p style="left:300px">4</p>
+              <p style="left:400px">1</p>
+              <p style="left:430px">7</p>
+            </div> 
+
+            <div class="overlay" style="top:535px">
+              <p style="left:130px">6</p>
+              <p style="left:170px">1/5</p>
+              <p style="left:230px">4</p>
+              <p style="left:280px">3</p>
+              <p style="left:325px">2</p>
+              <p style="left:350px">3</p>
+              <p style="left:380px">4</p>
+              <p style="left:400px">5</p>
+              <p style="left:425px">1</p>
+            </div> 
+
+
+             <!--Chord 입력 라인-->
+      </div>
+      
+
+</div>
+
+<div id="debug_out" style="margin:100px;width:50%;height:50px;cursor:pointer;"></div>
+
+    <script src="/trans.js"></script>
+
+</body>
+</html>

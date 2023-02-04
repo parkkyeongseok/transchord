@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TransPosition Worship</title>
+<link rel="stylesheet" type="text/css" href="/styles.css" />
+</head>
+<body>
+   
+  <div>
+    <h2>코드선택</h2>
+    <div class="switch-field">
+      <input type="radio" id="root_A" name="root" value="A" onclick='transfer(event)'checked />
+      <label for="root_A">A</label>
+      <input type="radio" id="root_Bb" name="root" value="Bb" onclick='transfer(event)' />
+      <label for="root_Bb">Bb</label>
+      <input type="radio" id="root_B" name="root" value="B" onclick='transfer(event)' />
+      <label for="root_B">B</label>
+      <input type="radio" id="root_C" name="root" value="C" onclick='transfer(event)' />
+      <label for="root_C">C</label>
+      <input type="radio" id="root_C#" name="root" value="C#" onclick='transfer(event)' />
+      <label for="root_C#">C#</label>
+      <input type="radio" id="root_D" name="root" value="D" onclick='transfer(event)' /> 
+      <label for="root_D">D</label>
+      <input type="radio" id="root_Eb" name="root" value="Eb" onclick='transfer(event)' />
+      <label for="root_Eb">Eb</label>
+      <input type="radio" id="root_E" name="root" value="E" onclick='transfer(event)' />
+      <label for="root_E">E</label>
+      <input type="radio" id="root_F" name="root" value="F" onclick='transfer(event)' />
+      <label for="root_F">F</label>
+      <input type="radio" id="root_F#" name="root" value="F#" onclick='transfer(event)' />
+      <label for="root_F#">F#</label>		
+      <input type="radio" id="root_G" name="root" value="G" onclick='transfer(event)' />
+      <label for="root_G">G</label>
+      <input type="radio" id="root_G#" name="root" value="G#" onclick='transfer(event)' />
+      <label for="root_G#">G#</label>
+    </div>
+  </div>
+<div>
+      <div class="container" onclick="action_coords(event)">
+        <!---이미지는 500px 기본-->
+          <img src="/score/spare.jpg" alt="My Image" width="500px">
+            <!--Chord 입력 라인-->
+            <div class="overlay" style="top:85px">
+             <p style="left:70px">1</p>
+             <p style="left:120px">7</p>
+             <p style="left:200px">6</p>
+             <p style="left:250px">1/5</p>
+             <p style="left:300px">5</p>
+             <p style="left:370px">4</p>
+             <p style="left:440px">3</p>
+            </div> 
+
+            <div class="overlay" style="top:220px">
+              <p style="left:65px">4</p>
+              <p style="left:200px">3</p>
+              <p style="left:300px">2</p>
+              <p style="left:440px">5</p>
+            </div> 
+
+             <div class="overlay" style="top:355px">
+              <p style="left:65px">3</p>
+              <p style="left:200px">4</p>
+              <p style="left:300px">6</p>
+              <p style="left:430px">5</p>
+              <!--<span style="left:440px">(+한마디)</span>-->
+            </div>
+
+            <div class="overlay" style="top:438px">
+              <p style="left:60px">6</p>
+              <p style="left:120px">4</p>
+              <p style="left:190px">3</p>
+              <p style="left:240px">6</p> 
+              <p style="left:300px">5</p>
+              <p style="left:440px">1</p>
+            </div>
+
+            
+            <div class="overlay" style="top:520px">
+              <p style="left:140px;">4</p>
+              <p style="left:240px">3</p>
+              <p style="left:340px">4</p> 
+              <p style="left:390px">5</p>
+              <p style="left:450px">1</p>
+            </div>
+
+            <div class="overlay" style="top:600px">
+              <p style="left:110px;">6</p>
+              <p style="left:220px">3m</p>
+              <p style="left:320px">4</p> 
+              <p style="left:390px">5</p>
+              <p style="left:440px">1</p>
+            </div>
+             <!--Chord 입력 라인-->
+      </div>
+      
+
+</div>
+
+<div id="debug_out" style="margin:100px;width:50%;height:50px;cursor:pointer;"></div>
+
+    <script src="/trans.js"></script>
+
+</body>
+</html>
